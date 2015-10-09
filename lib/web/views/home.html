@@ -1,4 +1,3 @@
-{% from "macros/navigation.html" import navigation %}
 
 <!DOCTYPE html>
 <html lang='en'>
@@ -15,7 +14,7 @@
     <link href="/static/leaflet/leaflet-0.7.5/leaflet-0.7.5.css" rel="stylesheet" />
     <link href="/static/leaflet/mapbox-2.2.2/mapbox.standalone.css" rel="stylesheet" />
     <link href="/static/bootstrap/bootstrap-treeview.css" rel="stylesheet" />
-    <link href="/cartografia/_css/cartografia.css" rel="stylesheet" />
+    <link href="/cartografia-app/_css/cartografia.css" rel="stylesheet" />
     
 </head>
 
@@ -24,7 +23,53 @@
    
     <div id="main-container">
         <div id="navbar-container" style="z-index: 1001;">
-            {{ navigation(ctx) }}
+    
+            <!-- TOP NAVIGATION BAR -->
+            <nav class="navbar navbar-default">
+
+
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-bar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/{{ lang }}" style="padding-left: 30px; padding-right: 30px;">
+                            CIRAC
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="top-bar">
+
+
+
+
+                        <ul class="nav navbar-nav navbar-right">
+            
+                            <li style="margin-left: 15px;">
+
+                                {# contact button #}
+                                <button id="js-contact-nav" style="padding-left: 18px; padding-right: 18px;" type="button" class="btn btn-default navbar-btn" data-toggle="tooltip" data-placement="bottom" title="Contacto (clique para enviar um email para aps@apseguradores.pt)">
+                                    <i class="fa fa-at" style="font-size: 120%;"></i>
+                                </button>
+
+
+                            </li>
+
+
+                        </ul>
+
+                   
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+
         </div>
 
         <div id="map-container" xstyle="border: solid 1px;">
@@ -54,10 +99,6 @@
 	<script type="text/javascript">
 
 	window.Cirac = window.Cirac || {};
-	Cirac.lang = "{{ lang }}";
-	Cirac.urlParam1 = "{{ ctx.urlParam1 | default('ERROR - urlParam1 is missing') }}";
-	Cirac.publicUri = "http://{{ publicUri }}";
-
     $("#js-contact-nav").on("click", function(){
 
     	window.location.href = "mailto:aps@apseguradores.pt";	
@@ -90,19 +131,19 @@
     {# cartografia app #}
     {# NOTE: if we add new files here, we must add in the gruntfile as well #}
 
-    <script src="cartografia/index.js"></script>
+    <script src="/cartografia-app/index.js"></script>
 
-    <script src="cartografia/leaflet-backbone-view.js"></script>
-    <script src="cartografia/exclusive-layers.js"></script>
+    <script src="/cartografia-app/leaflet-backbone-view.js"></script>
+    <script src="/cartografia-app/exclusive-layers.js"></script>
 
-    <script src="cartografia/sequence/sequence.js"></script>
-    <script src="cartografia/entities.js"></script>
-    <script src="cartografia/behaviors.js"></script>
-    <script src="cartografia/menu/menu.js"></script>
-    <script src="cartografia/map/map.js"></script>
-    <script src="cartografia/tile-providers.js"></script>
+    <script src="/cartografia-app/sequence/sequence.js"></script>
+    <script src="/cartografia-app/entities.js"></script>
+    <script src="/cartografia-app/behaviors.js"></script>
+    <script src="/cartografia-app/menu/menu.js"></script>
+    <script src="/cartografia-app/map/map.js"></script>
+    <script src="/cartografia-app/tile-providers.js"></script>
 
-    <script src="cartografia/init.js"></script>
+    <script src="/cartografia-app/init.js"></script>
 {#
 #}
 
