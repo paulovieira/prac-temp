@@ -23,5 +23,6 @@ config/production.js
 lib/web/client/static/_js/*min.js*
 .tern-port
 bundles.json
+tiles
 
 
