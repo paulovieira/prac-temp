@@ -6,7 +6,8 @@ var Nunjucks = require('hapi-nunjucks');
 var internals = {
     rootDir:      Path.resolve(__dirname, ".."),
     viewsDir:     Path.resolve(__dirname, "..", "lib/web/views"),
-    tilesDir:     Path.resolve(__dirname, "..", "tiles"),
+    //tilesDir:     Path.resolve(__dirname, "..", "tiles"),
+    tilesDir:  "/home/pvieira/tilemill-files/export",
     tilesExamplesDir:     Path.resolve(__dirname, "..", "tiles-examples"),
     env:process.env.NODE_ENV 
 };
@@ -17,8 +18,6 @@ module.exports = {
 
     host: "localhost",
     port: 5000,
-    //debugEndpoint: "/debug/consol",  // endpoint to be used in the TV module
-    
     publicUri: "localhost",  // host
     publicPort: 5000,  // probably 80
 
@@ -49,11 +48,6 @@ module.exports = {
                 "html": Nunjucks
             },
         },
-
-    },
-
-    apiPrefix: {
-        v1: "/api/v1"
     },
 
 };
