@@ -4,8 +4,7 @@
   "args": [
   ],
   "env": {
-    "NODE_ENV": "production",
-    "TILEMILL_FILES_DIR": "/home/pvieira/tilemill-files"
+    "NODE_ENV": "production"
   },
   "max_memory_restart" : "300M",
   "treekill": true
