@@ -7,8 +7,8 @@ var internals = {
     rootDir:      Path.resolve(__dirname, ".."),
     viewsDir:     Path.resolve(__dirname, "..", "lib/web/views"),
     tilesDir:     Path.resolve(__dirname, "..", "tiles"),
-    //tilesDir:  "/home/pvieira/tilemill-files/export",
-    tilesExamplesDir:     Path.resolve(__dirname, "..", "tiles-examples"),
+    tilesDir:  "/home/pvieira/tilemill-files/export",
+    //tilesExamplesDir:     Path.resolve(__dirname, "..", "tiles-examples"),
     env:process.env.NODE_ENV 
 };
 
