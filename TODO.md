@@ -1,0 +1,1 @@
+add cors to the tile routes (?)

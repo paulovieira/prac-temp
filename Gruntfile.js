@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     
     internals.timestamp = grunt.template.today('yymmdd-HHMMss');
     internals.staticsDir = Path.join("lib", "web", "client", "static");
-    internals.cartografiaDir = Path.join("lib", "web", "client", "cartografia");
+    internals.cartografiaDir = Path.join("lib", "web", "client", "cartografia-app");
 
     internals.statics = {};
 
@@ -42,7 +42,8 @@ module.exports = function(grunt) {
         "lib/web/client/static/jquery/jquery.documentsize-1.2.1.js",
         "lib/web/client/static/jquery/jquery.mousewheel-3.1.12.js",
         "lib/web/client/static/jquery/jquery.fullscreen-0.5.1.js",
-        "lib/web/client/static/leaflet/mapbox-2.2.1/mapbox.uncompressed.js",
+        "lib/web/client/static/leaflet/leaflet-0.7.5/leaflet-0.7.5.js",
+        "lib/web/client/static/leaflet/mapbox-2.2.2/mapbox.standalone.uncompressed.js",
         "lib/web/client/static/leaflet/leaflet-providers-1.0.29.js",
         // "lib/web/client/static/leaflet/leaflet-minimap/Control.MiniMap-447530.js",
         "lib/web/client/static/underscore/underscore-1.6.0.js",
@@ -73,7 +74,7 @@ module.exports = function(grunt) {
     // cartografia target (app)
     internals.statics.cartografiaApp = {};
     internals.statics.cartografiaApp.input = [
-        "lib/web/client/cartografia/index.js",
+        "lib/web/client/cartografia-app/index.js",
 /*
         "lib/web/client/cartografia/leaflet-backbone-view.js",
         "lib/web/client/cartografia/exclusive-layers.js",

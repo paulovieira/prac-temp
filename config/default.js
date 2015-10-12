@@ -16,11 +16,11 @@ internals.bundles = JSON.parse(Fs.readFileSync(Path.join(internals.rootDir, "bun
 module.exports = {
 
     host: "localhost",
-    port: 3000,
+    port: 5000,
     //debugEndpoint: "/debug/consol",  // endpoint to be used in the TV module
     
     publicUri: "localhost",  // host
-    publicPort: 3000,  // probably 80
+    publicPort: 5000,  // probably 80
 
     rootDir: internals.rootDir,
     viewsDir: internals.viewsDir,
