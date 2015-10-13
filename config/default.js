@@ -1,4 +1,5 @@
- var Path = require("path");
+
+var Path = require("path");
 var Fs = require("fs");
 var Nunjucks = require('hapi-nunjucks');
 
