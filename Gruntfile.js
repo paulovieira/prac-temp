@@ -41,25 +41,16 @@ module.exports = function(grunt) {
     internals.statics.cartografiaLibs.input = [
         "lib/web/client/static/jquery/jquery.documentsize-1.2.1.js",
         "lib/web/client/static/jquery/jquery.mousewheel-3.1.12.js",
-        "lib/web/client/static/jquery/jquery.fullscreen-0.5.1.js",
         "lib/web/client/static/leaflet/leaflet-0.7.5/leaflet-0.7.5.js",
         "lib/web/client/static/leaflet/mapbox-2.2.2/mapbox.standalone.uncompressed.js",
-        "lib/web/client/static/leaflet/leaflet-providers-1.0.29.js",
-        // "lib/web/client/static/leaflet/leaflet-minimap/Control.MiniMap-447530.js",
+        "lib/web/client/static/leaflet/leaflet-control-geocoder-1.3.1/Control.Geocoder-1.3.1.js",
         "lib/web/client/static/underscore/underscore-1.6.0.js",
-        //"lib/web/client/static/underscore/underscore.string-3.0.3.js",
-        // "lib/web/client/static/q/q-1.1.2.js",
-        // "lib/web/client/static/bootstrap/bootstrap-notify-51a18c.js",
-        // "lib/web/client/static/bootstrap/bootstrap-modal-2.2.5.js",
-        // "lib/web/client/static/fecha/fecha-1.0.0.js",
         "lib/web/client/static/bootstrap/bootstrap-treeview.js",
         "lib/web/client/static/nunjucks/nunjucks-slim-1.3.3.js",
         "lib/web/client/static/backbone/json2.js",
         "lib/web/client/static/backbone/backbone-1.1.2.js",
         "lib/web/client/static/backbone/backbone.select-1.3.2.js",
-        "lib/web/client/static/backbone/backbone.base-router-1.1.0.js",
         "lib/web/client/static/backbone/backbone.radio-1.0.1.js",
-        "lib/web/client/static/backbone/backbone.attributes-5b0f73.js",
         "lib/web/client/static/backbone/backbone.marionette-2.4.1.js",
         "lib/web/client/static/backbone/renderer-nunjucks.js",
     ];
@@ -74,18 +65,17 @@ module.exports = function(grunt) {
     // cartografia target (app)
     internals.statics.cartografiaApp = {};
     internals.statics.cartografiaApp.input = [
+        "lib/web/client/cartografia-app/menu-definition.js",
+        "lib/web/client/cartografia-app/cirac-layers.js",
+        "lib/web/client/cartografia-app/exclusive-layers.js",
+
         "lib/web/client/cartografia-app/index.js",
-/*
-        "lib/web/client/cartografia/leaflet-backbone-view.js",
-        "lib/web/client/cartografia/exclusive-layers.js",
-        "lib/web/client/cartografia/sequence/sequence.js",
-        "lib/web/client/cartografia/entities.js",
-        "lib/web/client/cartografia/behaviors.js",
-        "lib/web/client/cartografia/menu/menu.js",
-        "lib/web/client/cartografia/map/map.js",
-        "lib/web/client/cartografia/tile-providers.js",
-        "lib/web/client/cartografia/init.js"
-*/
+        "lib/web/client/cartografia-app/leaflet-backbone-view.js",
+        "lib/web/client/cartografia-app/entities.js",
+        "lib/web/client/cartografia-app/behaviors.js",
+        "lib/web/client/cartografia-app/menu/menu.js",
+        "lib/web/client/cartografia-app/map/map.js",
+        "lib/web/client/cartografia-app/init.js"
     ];
 
     internals.statics.cartografiaApp.output = Path.join(
