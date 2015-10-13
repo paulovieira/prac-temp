@@ -56,3 +56,8 @@ select * from shapes_create('{"srid":4326,"description":{"en":""},"schema_name":
 
 --
 
+
+
+
+
+Quando se selecciona um layer do cirac, já nao é possível voltar a nao ver esse layer
