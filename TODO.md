@@ -13,12 +13,13 @@ select * from shapes_create('{"srid":4326,"description":{"en":""},"schema_name":
 3) style + legend + interactivity
 
 
-4) export to mbtiles: 8-16 (or only 8-9 to begin)
+4) export to mbtiles: 8-15 (or only 8-9 to begin)
 
 
 5) copy-paste the .mml file from the project 
 
-5a) re-use the following:
+
+5a) re-use the following (use a simple script to read/write)
 
     bounds
     center
@@ -37,6 +38,97 @@ select * from shapes_create('{"srid":4326,"description":{"en":""},"schema_name":
 
 
     
+--
+priority:
+---
+
+Combined Flood Vulnerability Index by Parish (Mode)
+Combined Flood Vulnerability Index by Parish (75 percentile)
+Combined Flood Vulnerability Index by Zip Code (Mode)
+Combined Flood Vulnerability Index by Zip Code (75 percentile)
+
+1, #38A800, "Baixa Suscetibilidade Física, Exposição e Precipitação"
+2, #66BF00, "Baixa Suscetibilidade Física e Precipitação, Exposição elevada"
+3, #9BD900, "Baixa Suscetibilidade Física e Exposição e elevada Precipitação"
+4, #DEF200, "Baixa Suscetibilidade Física e elevada Exposição e Precipitação"
+5, #FFDD00, "Elevada Suscetibilidade Física e baixa Exposição e Precipitação"
+6, #FF9100, "Elevada Suscetibilidade Física e Exposição e baixa Precipitação"
+7, #FF4800, "Elevada Suscetibilidade Física e Precipitação e baixa Exposição"
+8, #FF0000, "Elevada Suscetibilidade Física, Exposição e Precipitação"
+
+---
+
+Physical Susceptibility Index (Parish)
+Physical Susceptibility Index p75 (Parish)
+Physical Susceptibility Index (zip code)
+Physical Susceptibility Index p75 (zip code)
+
+"low", #38A800, "baixo"
+"moderate", #FFFF00, "moderado"
+"high", #FF9500, "elevado"
+"very high", #FF0000, "muito elevado"
+
+
+---
+
+Precipitation Index (Parish)
+Precipitation Index p75 (Parish)
+Precipitation Index (zip code)
+Precipitation Index p75 (zip code)
+
+"low", #38A800, "baixo, 380-730 mm/ano"
+"moderate", #FFFF00, "moderado, 730-930 mm/ano"
+"high", #FF9500, "elevado, 930-1270 mm/ano"
+"very high", #FF0000, "muito elevado, 1270-3500 mm/ano"
+
+---
+
+Social Susceptibility Index (Parish)
+Social Susceptibility Index p75 (Parish)
+Social Susceptibility Index (zip code)
+Social Susceptibility Index p75 (zip code)
+
+"low", #38A800, "baixo"
+"moderate", #FFFF00, "moderado"
+"high", #FF9500, "elevado"
+"very high", #FF0000, "muito elevado"
+
+---
+
+Exposure (Parish)
+Exposure (zip code)
+Exposure P75 (Parish)
+Exposure P75 (zip code)
+
+"low", #38A800, "baixo"
+"moderate", #FFFF00, "moderado"
+"high", #FF9500, "elevado"
+"very high", #FF0000, "muito elevado"
+
+---
+
+Basic Flood Vulnerability Index (Parish)
+Basic Flood Vulnerability Index P75 (Parish)
+Basic Flood Vulnerability Index (zip code)
+Basic Flood Vulnerability Index P75 (zip code)
+
+1-3, #38A800, "baixo"
+4, #FFFF00, "moderado"
+5-6, #FF9500, "elevado"
+7-8, #FF0000, "muito elevado"
+
+---
+
+Flood Vulnerability Index (Parish)
+Flood Vulnerability Index P75 (Parish)
+Flood Vulnerability Index (zip code)
+Flood Vulnerability Index p75 (zip code)
+
+3-5, #38A800, "baixo"
+6-7, #FFFF00, "moderado"
+8-10, #FF9500, "elevado"
+11-12, #FF0000, "muito elevado"
+
 
     
 
