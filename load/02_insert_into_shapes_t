@@ -1,0 +1,51 @@
+
+-- the names of the tables must be in lower case here
+
+--	cp4
+select * from shapes_create('{"table_name":"cirac_vul_cp4_sf75"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_sf"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_e75"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_e"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_tf75"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_tf"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_ssi75"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_ssi"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_bfvi75"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_bfvi"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_fvi75"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_fvi"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_cfvi_75"}');
+select * from shapes_create('{"table_name":"cirac_vul_cp4_cfvi_mode"}');
+
+
+--	freg
+select * from shapes_create('{"table_name":"cirac_vul_freg_sf75"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_sf"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_e75"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_e"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_tf75"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_tf"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_ssi75"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_ssi"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_bfvi75"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_bfvi"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_fvi75"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_fvi"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_cfvi_75"}');
+select * from shapes_create('{"table_name":"cirac_vul_freg_cfvi_mode"}');
+
+--	bgri
+select * from shapes_create('{"table_name":"cirac_vul_bgri_sf"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_sf75"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_e75"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_e"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_tf75"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_tf"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_ssi75"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_ssi"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_fvi_75"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_fvi_n"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_cfvi75"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_cfvi"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_bfvi_75"}');
+select * from shapes_create('{"table_name":"cirac_vul_bgri_bfvi_n"}');

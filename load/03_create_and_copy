@@ -1,0 +1,27 @@
+create one project: cirac_vul_cp4_sf75
+
+
+then copy the project directory for the others
+
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_sf
+
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_e75
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_e
+
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_tf75
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_tf
+
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_ssi75
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_ssi
+
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_bfvi75
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_bfvi
+
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_fvi75
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_fvi
+
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_cfvi_75
+cp -r cirac_vul_cp4_sf75 cirac_vul_cp4-cfvi_mode
+
+
+manually edit each file

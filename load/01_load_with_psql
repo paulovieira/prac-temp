@@ -1,0 +1,53 @@
+
+
+
+
+
+	cp4
+shp2pgsql -D -I -s 4326 ./Susceptibilidade-Fisica/Map-SHP/CP4/Percentile-75/cirac_vul_CP4_SF75.shp   geo.cirac_vul_CP4_SF75   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Susceptibilidade-Fisica/Map-SHP/CP4/cirac_vul_CP4_SF.shp   geo.cirac_vul_CP4_SF   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Exposicao/Map-SHP/CP4/Percentile-75/cirac_vul_CP4_E75.shp   geo.cirac_vul_CP4_E75   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Exposicao/Map-SHP/CP4/cirac_vul_CP4_E.shp   geo.cirac_vul_CP4_E   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Precipitacao/Map-SHP/CP4/Percentile-75/cirac_vul_CP4_TF75.shp   geo.cirac_vul_CP4_TF75   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Precipitacao/Map-SHP/CP4/cirac_vul_CP4_TF.shp   geo.cirac_vul_CP4_TF   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Resiliencia/Map-SHP/CP4/Percentile-75/cirac_vul_CP4_SSI75.shp   geo.cirac_vul_CP4_SSI75   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Resiliencia/Map-SHP/CP4/cirac_vul_CP4_SSI.shp   geo.cirac_vul_CP4_SSI   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/CP4/Indice-de-vulnerabilidade-Basico/Percentile-75/cirac_vul_CP4_BFVI75.shp   geo.cirac_vul_CP4_BFVI75   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/CP4/Indice-de-vulnerabilidade-Basico/cirac_vul_CP4_BFVI.shp   geo.cirac_vul_CP4_BFVI   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/CP4/Indice-de-Vulnerabilidade/Percentile-75/cirac_vul_CP4_FVI75.shp   geo.cirac_vul_CP4_FVI75   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/CP4/Indice-de-Vulnerabilidade/cirac_vul_CP4_FVI.shp   geo.cirac_vul_CP4_FVI   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/CP4/Indice-de-Vulnerabilidade-Combinado/Percentile-75/cirac_vul_cp4_cfvi_75.shp   geo.cirac_vul_cp4_cfvi_75   | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/CP4/Indice-de-Vulnerabilidade-Combinado/cirac_vul_cp4_cfvi_mode.shp   geo.cirac_vul_cp4_cfvi_mode   | psql --dbname=150608
+
+
+	freg
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Susceptibilidade-Fisica/Map-SHP/Freguesia/Percentile-75/cirac_vul_freg_SF75.shp   geo.cirac_vul_freg_SF75     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Susceptibilidade-Fisica/Map-SHP/Freguesia/cirac_vul_freg_SF.shp   geo.cirac_vul_freg_SF     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Exposicao/Map-SHP/Freguesia/Percentile-75/cirac_vul_freg_E75.shp   geo.cirac_vul_freg_E75     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Exposicao/Map-SHP/Freguesia/cirac_vul_freg_E.shp   geo.cirac_vul_freg_E     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Precipitacao/Map-SHP/Freguesia/Percentile-75/cirac_vul_freg_TF75.shp   geo.cirac_vul_freg_TF75     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Precipitacao/Map-SHP/Freguesia/cirac_vul_freg_TF.shp   geo.cirac_vul_freg_TF     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Resiliencia/Map-SHP/Freguesia/Percentile-75/cirac_vul_freg_SSI75.shp   geo.cirac_vul_freg_SSI75     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Resiliencia/Map-SHP/Freguesia/cirac_vul_freg_SSI.shp   geo.cirac_vul_freg_SSI     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/Freguesia/Indice-de-vulnerabilidade-Basico/Percentile-75/cirac_vul_freg_BFVI75.shp   geo.cirac_vul_freg_BFVI75     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/Freguesia/Indice-de-vulnerabilidade-Basico/cirac_vul_freg_BFVI.shp   geo.cirac_vul_freg_BFVI     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/Freguesia/Indice-de-Vulnerabilidade/Percentile-75/cirac_vul_freg_FVI75.shp   geo.cirac_vul_freg_FVI75     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/Freguesia/Indice-de-Vulnerabilidade/cirac_vul_freg_FVI.shp   geo.cirac_vul_freg_FVI     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/Freguesia/Indice-de-Vulnerabilidade-Combinado/Percentile-75/cirac_vul_freg_cfvi_75.shp   geo.cirac_vul_freg_cfvi_75     | psql --dbname=150608
+shp2pgsql -W LATIN1  -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/Freguesia/Indice-de-Vulnerabilidade-Combinado/cirac_vul_freg_cfvi_mode.shp   geo.cirac_vul_freg_cfvi_mode     | psql --dbname=150608
+
+	bgri
+shp2pgsql -D -I -s 4326 ./Susceptibilidade-Fisica/Map-SHP/BGRI/cirac_vul_bgri_SF.shp   geo.cirac_vul_bgri_SF    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Susceptibilidade-Fisica/Map-SHP/BGRI/Percentile-75/cirac_vul_bgri_SF75.shp   geo.cirac_vul_bgri_SF75    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Exposicao/Map-SHP/BGRI/Percentile-75/cirac_vul_bgri_E75.shp   geo.cirac_vul_bgri_E75    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Exposicao/Map-SHP/BGRI/cirac_vul_bgri_E.shp   geo.cirac_vul_bgri_E    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Precipitacao/Map-SHP/BGRI/Percentile-75/cirac_vul_bgri_TF75.shp   geo.cirac_vul_bgri_TF75    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Precipitacao/Map-SHP/BGRI/cirac_vul_bgri_TF.shp   geo.cirac_vul_bgri_TF    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Resiliencia/Map-SHP/BGRI/Percentile-75/cirac_vul_bgri_SSI75.shp   geo.cirac_vul_bgri_SSI75    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Resiliencia/Map-SHP/BGRI/cirac_vul_bgri_SSI.shp   geo.cirac_vul_bgri_SSI    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/BGRI/Indice-de-vulnerabilidade/Percentile-75/cirac_vul_bgri_FVI_75.shp   geo.cirac_vul_bgri_FVI_75    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/BGRI/Indice-de-vulnerabilidade/cirac_vul_bgri_FVI_N.shp   geo.cirac_vul_bgri_FVI_N    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/BGRI/Indice-de-Vulnerabilidade-Combinado/Percentile-75/cirac_vul_bgri_cfvi75.shp   geo.cirac_vul_bgri_cfvi75    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/BGRI/Indice-de-Vulnerabilidade-Combinado/cirac_vul_bgri_cfvi.shp   geo.cirac_vul_bgri_cfvi    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/BGRI/Indice-de-Vulnerabilidade-Basico/Percentile-75/cirac_vul_bgri_BFVI_75.shp   geo.cirac_vul_bgri_BFVI_75    | psql --dbname=150608
+shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/BGRI/Indice-de-Vulnerabilidade-Basico/cirac_vul_bgri_BFVI_N.shp   geo.cirac_vul_bgri_BFVI_N    | psql --dbname=150608

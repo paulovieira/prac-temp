@@ -1,4 +1,54 @@
 
+151204
+ - (update the shapes_create script)
+ - (for CP4) 
+    - create the legends and interaction
+    - run tilemill on the cp4 maps
+    - check that maps can be seen well
+    - verify the maps against the current verision in the cirac website
+
+ - repeat for freguesias and bgri (step 3 + the above steps)
+
+
+
+7 groups
+
+        Índices de Vulnerabilidade a Inundações
+
+        Basic Flood Vulnerability Index
+        Flood Vulnerability Index
+        Combined Flood Vulnerability
+
+        ---
+
+        Componentes
+
+        Social Susceptibility Index
+        Physical Susceptibility Index
+        Exposure Index
+        Precipitation Index
+        
+- 7 groups
+- p75/moda
+- 3 escalas espaciais: código postal/freguesa/bgri
+
+7 x 2 x 3 = 42 mapas
+
+
+a) código postal, p75
+
+
+b) código postal, mode
+
+c) freguesia, p75
+d) freguesia, mode
+
+d) bgri, p75
+e) bgri, mode
+
+
+
+
 1) execute shp2pgsql
 shp2pgsql -D -I -s 4326                 "/path/to/shape_file.shp" geo.shape_file | psql --dbname=150608
 
@@ -58,6 +108,30 @@ Combined Flood Vulnerability Index by Zip Code (75 percentile)
 
 ---
 
+Basic Flood Vulnerability Index (Parish)
+Basic Flood Vulnerability Index P75 (Parish)
+Basic Flood Vulnerability Index (zip code)
+Basic Flood Vulnerability Index P75 (zip code)
+
+1-3, #38A800, "baixo"
+4, #FFFF00, "moderado"
+5-6, #FF9500, "elevado"
+7-8, #FF0000, "muito elevado"
+
+---
+
+Flood Vulnerability Index (Parish)
+Flood Vulnerability Index P75 (Parish)
+Flood Vulnerability Index (zip code)
+Flood Vulnerability Index p75 (zip code)
+
+3-5, #38A800, "baixo"
+6-7, #FFFF00, "moderado"
+8-10, #FF9500, "elevado"
+11-12, #FF0000, "muito elevado"
+
+---
+
 Physical Susceptibility Index (Parish)
 Physical Susceptibility Index p75 (Parish)
 Physical Susceptibility Index (zip code)
@@ -107,27 +181,6 @@ Exposure P75 (zip code)
 
 ---
 
-Basic Flood Vulnerability Index (Parish)
-Basic Flood Vulnerability Index P75 (Parish)
-Basic Flood Vulnerability Index (zip code)
-Basic Flood Vulnerability Index P75 (zip code)
-
-1-3, #38A800, "baixo"
-4, #FFFF00, "moderado"
-5-6, #FF9500, "elevado"
-7-8, #FF0000, "muito elevado"
-
----
-
-Flood Vulnerability Index (Parish)
-Flood Vulnerability Index P75 (Parish)
-Flood Vulnerability Index (zip code)
-Flood Vulnerability Index p75 (zip code)
-
-3-5, #38A800, "baixo"
-6-7, #FFFF00, "moderado"
-8-10, #FF9500, "elevado"
-11-12, #FF0000, "muito elevado"
 
 
     
