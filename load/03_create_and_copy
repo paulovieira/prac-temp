@@ -22,10 +22,10 @@ cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_ssi
 cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_bfvi75
 cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_bfvi
 
-TO BE DONE
-
 cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_fvi75
 cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_fvi
+
+TO BE DONE
 
 cp -r cirac_vul_cp4_sf75 cirac_vul_cp4_cfvi_75
 cp -r cirac_vul_cp4_sf75 cirac_vul_cp4-cfvi_mode
