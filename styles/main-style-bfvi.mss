@@ -20,54 +20,49 @@ Map {
 @border: #434343;
 
 
-#cirac_vul_cp4_sf75 {
+#cirac_vul_cp4_bfvi {
   
-  [value=1] {
+  [value>=1][value<=3] {
     polygon-fill:@low;
+    line-color:@low;
   }
   
-  [value=2] {
+  [value=4] {
     polygon-fill:@moderate;
+    line-color:@moderate;
   }
   
-  [value=3] {
+  [value>=5][value<=6] {
     polygon-fill:@high;
+    line-color:@high;
   }
 
-  [value=4] {
+  [value>=7][value<=8] {
     polygon-fill:@very_high;
+    line-color:@very_high;
   }
   
 }
 
 /* set borders according to the zoom */
 
-#cirac_vul_cp4_tf75[zoom>=6] {
-  line-color: @border;
-  line-width:0.2;
-}
-
-#cirac_vul_cp4_tf75[zoom>=8] {
+#cirac_vul_cp4_bfvi [zoom>=8][value>=0] {
   line-color: @border;
   line-width:0.3;
 }
 
-#cirac_vul_cp4_sf75[zoom>=10] {
+#cirac_vul_cp4_bfvi[zoom>=10][value>=0] {
   line-color: @border;
   line-width:0.4;
 }
 
-#cirac_vul_cp4_sf75[zoom>=13] {
+#cirac_vul_cp4_bfvi[zoom>=12][value>=0] {
   line-color: @border;
   line-width:0.5;
 }
 
-#cirac_vul_cp4_sf75[zoom>=14] {
+#cirac_vul_cp4_bfvi[zoom>=14][value>=0] {
   line-color: @border;
   line-width:0.7;
 }
 
-#cirac_vul_cp4_sf75[zoom>=15] {
-  line-color: @border;
-  line-width:0.8;
-}
