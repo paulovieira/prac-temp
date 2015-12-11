@@ -1,1 +1,46 @@
 Run export_mbtiles.sh with the updated array of projects
+
+In the tilemill projects, update the legends and interactions
+
+Run the create_tilejson.sh script to create the tilejson file
+
+-read and parse all the .export files in ./tiles (they're json files)
+-get the "from.mml" property
+-use the properties indicated below
+
+
+5a) re-use the following
+
+    bounds
+    center
+    minzoom
+    maxzoom
+    name
+    description
+    legend
+
+5b) add these:
+    id (same as the file name)
+    isCirac: true,
+    template: (copy from template_teaser.template_teaser)
+    tiles: [Cirac.tilesHost + "/tiles/file-name/{z}/{x}/{y}.png"]
+    grids (same as the file name)
+    grids: [Cirac.tilesHost + "/tiles/file-name/{z}/{x}/{y}.grid.json"
+  ],
+
+
+
+
+  "id"
+  "isCirac"
+  "tiles"
+  "grids"
+  "template"
+
+  "bounds"
+  "center"
+  "minzoom"
+  "maxzoom"
+  "name"
+  "description"
+  "legend"

@@ -3,7 +3,9 @@ create one project: cirac_vul_cp4_sf75
 -change the name of the project: mv cirac-vul-cp4-sf75 cirac_vul_cp4_sf75
 -set the style
 -set legend
--set the interaction: {{{zipcode}}} {{{value}}}
+-set the interaction and save (this will make sure the mml has the right configuration). We only need the variables that are going to be used later. Example: 
+	{{{zipcode}}} {{{value}}} 
+-
 
 
 then copy the project directory for the others
