@@ -51,3 +51,9 @@ shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/BGRI/Indice-de-Vulnerab
 shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/BGRI/Indice-de-Vulnerabilidade-Combinado/cirac_vul_bgri_cfvi.shp   geo.cirac_vul_bgri_cfvi    | psql --dbname=150608
 shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/BGRI/Indice-de-Vulnerabilidade-Basico/Percentile-75/cirac_vul_bgri_BFVI_75.shp   geo.cirac_vul_bgri_BFVI_75    | psql --dbname=150608
 shp2pgsql -D -I -s 4326 ./Indice-Vulnerabilidade/Map-SHP/BGRI/Indice-de-Vulnerabilidade-Basico/cirac_vul_bgri_BFVI_N.shp   geo.cirac_vul_bgri_BFVI_N    | psql --dbname=150608
+
+
+
+lisbon
+shp2pgsql -I -s 27493:4326 ./risco/lisboa/SHP/cirac_risk_lx_T500.shp   geo.cirac_risk_lx_T500    | psql --dbname=150608
+

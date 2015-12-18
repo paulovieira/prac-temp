@@ -1,0 +1,18 @@
+
+-- the names of the tables must be in lower case here
+
+
+-- lisbon only (the data from the other case studies have been previsouly appended to the lisbon table)
+
+select * from shapes_create('{"table_name":"cirac_risk_lx_fixed_assets_i_b"}');
+select * from shapes_create('{"table_name":"cirac_risk_lx_fixed_assets_i_g"}');
+select * from shapes_create('{"table_name":"cirac_risk_lx_fixed_assets_ni_b"}');
+select * from shapes_create('{"table_name":"cirac_risk_lx_fixed_assets_ni_g"}');
+select * from shapes_create('{"table_name":"cirac_risk_lx_res_inventory_b"}');
+select * from shapes_create('{"table_name":"cirac_risk_lx_res_inventory_g"}');
+select * from shapes_create('{"table_name":"cirac_risk_lx_stocks_b"}');
+select * from shapes_create('{"table_name":"cirac_risk_lx_stocks_g"}');
+select * from shapes_create('{"table_name":"cirac_risk_lx_structure"}');
+select * from shapes_create('{"table_name":"cirac_risk_lx_t100"}');
+select * from shapes_create('{"table_name":"cirac_risk_lx_t500"}');
+select * from shapes_create('{"table_name":"cirac_risk_lx_t50"}');

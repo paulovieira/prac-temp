@@ -50,3 +50,4 @@ select * from shapes_create('{"table_name":"cirac_vul_bgri_fvi_n"}');
 select * from shapes_create('{"table_name":"cirac_vul_bgri_cfvi75"}');
 select * from shapes_create('{"table_name":"cirac_vul_bgri_cfvi"}');
 
+

@@ -1,0 +1,562 @@
+drop table if exists geo.cirac_risk_lx_fixed_assets_I_b;
+drop table if exists geo.cirac_risk_lx_fixed_assets_I_g;
+drop table if exists geo.cirac_risk_lx_fixed_assets_NI_b;
+drop table if exists geo.cirac_risk_lx_fixed_assets_NI_g;
+drop table if exists geo.cirac_risk_lx_res_inventory_b;
+drop table if exists geo.cirac_risk_lx_res_inventory_g;
+drop table if exists geo.cirac_risk_lx_stocks_b;
+drop table if exists geo.cirac_risk_lx_stocks_g;
+drop table if exists geo.cirac_risk_lx_structure;
+drop table if exists geo.cirac_risk_lx_T100;
+drop table if exists geo.cirac_risk_lx_T500;
+drop table if exists geo.cirac_risk_lx_T50;
+
+
+drop table if exists geo.cirac_risk_algs_fixed_assets_I_b;
+drop table if exists geo.cirac_risk_algs_fixed_assets_I_g;
+drop table if exists geo.cirac_risk_algs_fixed_assets_NI_b;
+drop table if exists geo.cirac_risk_algs_fixed_assets_NI_g;
+drop table if exists geo.cirac_risk_algs_res_inventory_b;
+drop table if exists geo.cirac_risk_algs_res_inventory_g;
+drop table if exists geo.cirac_risk_algs_stocks_b;
+drop table if exists geo.cirac_risk_algs_stocks_g;
+drop table if exists geo.cirac_risk_algs_structure;
+drop table if exists geo.cirac_risk_algs_T100;
+drop table if exists geo.cirac_risk_algs_T500;
+drop table if exists geo.cirac_risk_algs_T50;
+
+
+drop table if exists geo.cirac_risk_oporto_fixed_assets_I_b;
+drop table if exists geo.cirac_risk_oporto_fixed_assets_I_g;
+drop table if exists geo.cirac_risk_oporto_fixed_assets_NI_b;
+drop table if exists geo.cirac_risk_oporto_fixed_assets_NI_g;
+drop table if exists geo.cirac_risk_oporto_res_inventory_b;
+drop table if exists geo.cirac_risk_oporto_res_inventory_g;
+drop table if exists geo.cirac_risk_oporto_stocks_b;
+drop table if exists geo.cirac_risk_oporto_stocks_g;
+drop table if exists geo.cirac_risk_oporto_structure;
+drop table if exists geo.cirac_risk_oporto_T100;
+drop table if exists geo.cirac_risk_oporto_T500;
+drop table if exists geo.cirac_risk_oporto_T50;
+
+
+
+drop table if exists geo.cirac_risk_cmbr_bx_fixed_assets_I_b;
+drop table if exists geo.cirac_risk_cmbr_bx_fixed_assets_I_g;
+drop table if exists geo.cirac_risk_cmbr_bx_fixed_assets_NI_b;
+drop table if exists geo.cirac_risk_cmbr_bx_fixed_assets_NI_g;
+drop table if exists geo.cirac_risk_cmbr_bx_res_inventory_b;
+drop table if exists geo.cirac_risk_cmbr_bx_res_inventory_g;
+drop table if exists geo.cirac_risk_cmbr_bx_stocks_b;
+drop table if exists geo.cirac_risk_cmbr_bx_stocks_g;
+drop table if exists geo.cirac_risk_cmbr_bx_structure;
+drop table if exists geo.cirac_risk_cmbr_bx_T100;
+drop table if exists geo.cirac_risk_cmbr_bx_T500;
+drop table if exists geo.cirac_risk_cmbr_bx_T50;
+drop table if exists geo.cirac_risk_cmbr_sul_fixed_assets_I_b;
+drop table if exists geo.cirac_risk_cmbr_sul_fixed_assets_I_g;
+drop table if exists geo.cirac_risk_cmbr_sul_fixed_assets_NI_b;
+drop table if exists geo.cirac_risk_cmbr_sul_fixed_assets_NI_g;
+drop table if exists geo.cirac_risk_cmbr_sul_res_inventory_b;
+drop table if exists geo.cirac_risk_cmbr_sul_res_inventory_g;
+drop table if exists geo.cirac_risk_cmbr_sul_stocks_b;
+drop table if exists geo.cirac_risk_cmbr_sul_stocks_g;
+drop table if exists geo.cirac_risk_cmbr_sul_structure;
+drop table if exists geo.cirac_risk_cmbr_sul_T100;
+drop table if exists geo.cirac_risk_cmbr_sul_T500;
+drop table if exists geo.cirac_risk_cmbr_sul_T50;
+
+
+
+
+
+
+
+
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/lisboa/SHP/cirac_risk_lx_fixed_assets_I_b.shp  geo.cirac_risk_lx_fixed_assets_I_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/lisboa/SHP/cirac_risk_lx_fixed_assets_I_g.shp  geo.cirac_risk_lx_fixed_assets_I_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/lisboa/SHP/cirac_risk_lx_fixed_assets_NI_b.shp  geo.cirac_risk_lx_fixed_assets_NI_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/lisboa/SHP/cirac_risk_lx_fixed_assets_NI_g.shp  geo.cirac_risk_lx_fixed_assets_NI_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/lisboa/SHP/cirac_risk_lx_res_inventory_b.shp  geo.cirac_risk_lx_res_inventory_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/lisboa/SHP/cirac_risk_lx_res_inventory_g.shp  geo.cirac_risk_lx_res_inventory_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/lisboa/SHP/cirac_risk_lx_stocks_b.shp  geo.cirac_risk_lx_stocks_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/lisboa/SHP/cirac_risk_lx_stocks_g.shp  geo.cirac_risk_lx_stocks_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/lisboa/SHP/cirac_risk_lx_structure.shp  geo.cirac_risk_lx_structure  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/lisboa/SHP/cirac_risk_lx_T100.shp  geo.cirac_risk_lx_T100  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/lisboa/SHP/cirac_risk_lx_T500.shp  geo.cirac_risk_lx_T500  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/lisboa/SHP/cirac_risk_lx_T50.shp  geo.cirac_risk_lx_T50  | psql --dbname=150608
+
+
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/alges/SHP/cirac_risk_algs_fixed_assets_I_b.shp   geo.cirac_risk_algs_fixed_assets_I_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/alges/SHP/cirac_risk_algs_fixed_assets_I_g.shp   geo.cirac_risk_algs_fixed_assets_I_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/alges/SHP/cirac_risk_algs_fixed_assets_NI_b.shp   geo.cirac_risk_algs_fixed_assets_NI_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/alges/SHP/cirac_risk_algs_fixed_assets_NI_g.shp   geo.cirac_risk_algs_fixed_assets_NI_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/alges/SHP/cirac_risk_algs_res_inventory_b.shp   geo.cirac_risk_algs_res_inventory_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/alges/SHP/cirac_risk_algs_res_inventory_g.shp   geo.cirac_risk_algs_res_inventory_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/alges/SHP/cirac_risk_algs_stocks_b.shp   geo.cirac_risk_algs_stocks_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/alges/SHP/cirac_risk_algs_stocks_g.shp   geo.cirac_risk_algs_stocks_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/alges/SHP/cirac_risk_algs_structure.shp   geo.cirac_risk_algs_structure  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/alges/SHP/cirac_risk_algs_T100.shp   geo.cirac_risk_algs_T100  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/alges/SHP/cirac_risk_algs_T500.shp   geo.cirac_risk_algs_T500  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/alges/SHP/cirac_risk_algs_T50.shp   geo.cirac_risk_algs_T50  | psql --dbname=150608
+
+
+
+
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_bx_fixed_assets_I_b.shp   geo.cirac_risk_cmbr_bx_fixed_assets_I_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_bx_fixed_assets_I_g.shp   geo.cirac_risk_cmbr_bx_fixed_assets_I_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_bx_fixed_assets_NI_b.shp   geo.cirac_risk_cmbr_bx_fixed_assets_NI_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_bx_fixed_assets_NI_g.shp   geo.cirac_risk_cmbr_bx_fixed_assets_NI_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_bx_res_inventory_b.shp   geo.cirac_risk_cmbr_bx_res_inventory_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_bx_res_inventory_g.shp   geo.cirac_risk_cmbr_bx_res_inventory_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_bx_stocks_b.shp   geo.cirac_risk_cmbr_bx_stocks_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_bx_stocks_g.shp   geo.cirac_risk_cmbr_bx_stocks_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_bx_structure.shp   geo.cirac_risk_cmbr_bx_structure  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_bx_T100.shp   geo.cirac_risk_cmbr_bx_T100  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_bx_T500.shp   geo.cirac_risk_cmbr_bx_T500  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_bx_T50.shp   geo.cirac_risk_cmbr_bx_T50  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_sul_fixed_assets_I_b.shp   geo.cirac_risk_cmbr_sul_fixed_assets_I_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_sul_fixed_assets_I_g.shp   geo.cirac_risk_cmbr_sul_fixed_assets_I_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_sul_fixed_assets_NI_b.shp   geo.cirac_risk_cmbr_sul_fixed_assets_NI_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_sul_fixed_assets_NI_g.shp   geo.cirac_risk_cmbr_sul_fixed_assets_NI_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_sul_res_inventory_b.shp   geo.cirac_risk_cmbr_sul_res_inventory_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_sul_res_inventory_g.shp   geo.cirac_risk_cmbr_sul_res_inventory_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_sul_stocks_b.shp   geo.cirac_risk_cmbr_sul_stocks_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_sul_stocks_g.shp   geo.cirac_risk_cmbr_sul_stocks_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_sul_structure.shp   geo.cirac_risk_cmbr_sul_structure  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_sul_T100.shp   geo.cirac_risk_cmbr_sul_T100  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_sul_T500.shp   geo.cirac_risk_cmbr_sul_T500  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/coimbra/SHP/cirac_risk_cmbr_sul_T50.shp   geo.cirac_risk_cmbr_sul_T50  | psql --dbname=150608
+
+
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/porto-gaia/SHP/cirac_risk_oporto_fixed_assets_I_b.shp   geo.cirac_risk_oporto_fixed_assets_I_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/porto-gaia/SHP/cirac_risk_oporto_fixed_assets_I_g.shp   geo.cirac_risk_oporto_fixed_assets_I_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/porto-gaia/SHP/cirac_risk_oporto_fixed_assets_NI_b.shp   geo.cirac_risk_oporto_fixed_assets_NI_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/porto-gaia/SHP/cirac_risk_oporto_fixed_assets_NI_g.shp   geo.cirac_risk_oporto_fixed_assets_NI_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/porto-gaia/SHP/cirac_risk_oporto_res_inventory_b.shp   geo.cirac_risk_oporto_res_inventory_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/porto-gaia/SHP/cirac_risk_oporto_res_inventory_g.shp   geo.cirac_risk_oporto_res_inventory_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/porto-gaia/SHP/cirac_risk_oporto_stocks_b.shp   geo.cirac_risk_oporto_stocks_b  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/porto-gaia/SHP/cirac_risk_oporto_stocks_g.shp   geo.cirac_risk_oporto_stocks_g  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/porto-gaia/SHP/cirac_risk_oporto_structure.shp   geo.cirac_risk_oporto_structure  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/porto-gaia/SHP/cirac_risk_oporto_T100.shp   geo.cirac_risk_oporto_T100  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/porto-gaia/SHP/cirac_risk_oporto_T500.shp   geo.cirac_risk_oporto_T500  | psql --dbname=150608
+shp2pgsql -I -s 27493:4326  -t 2D ./risco/porto-gaia/SHP/cirac_risk_oporto_T50.shp   geo.cirac_risk_oporto_T50  | psql --dbname=150608
+
+
+
+
+
+
+
+
+DO $$
+DECLARE
+	_offset INT;
+BEGIN
+	-- apend alges
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_I_b;
+	raise notice 'lisboa: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_I_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_algs_fixed_assets_I_b;
+
+	-- append coimbra baixa
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_I_b;
+	raise notice 'alges: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_I_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_bx_fixed_assets_I_b;
+
+	-- append coimbra sul
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_I_b;
+	raise notice 'coimbra baixa: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_I_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_sul_fixed_assets_I_b;
+
+	-- append porto/gaia
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_I_b;
+	raise notice 'coimbra sul: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_I_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_oporto_fixed_assets_I_b;
+		
+END
+$$;
+
+
+
+
+DO $$
+DECLARE
+	_offset INT;
+BEGIN
+	-- apend alges
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_I_g;
+	raise notice 'lisboa: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_I_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_algs_fixed_assets_I_g;
+
+	-- append coimbra baixa
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_I_g;
+	raise notice 'alges: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_I_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_bx_fixed_assets_I_g;
+
+	-- append coimbra sul
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_I_g;
+	raise notice 'coimbra baixa: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_I_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_sul_fixed_assets_I_g;
+
+	-- append porto/gaia
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_I_g;
+	raise notice 'coimbra sul: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_I_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_oporto_fixed_assets_I_g;
+		
+END
+$$;
+
+
+
+
+DO $$
+DECLARE
+	_offset INT;
+BEGIN
+	-- apend alges
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_NI_b;
+	raise notice 'lisboa: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_NI_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_algs_fixed_assets_NI_b;
+
+	-- append coimbra baixa
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_NI_b;
+	raise notice 'alges: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_NI_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_bx_fixed_assets_NI_b;
+
+	-- append coimbra sul
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_NI_b;
+	raise notice 'coimbra baixa: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_NI_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_sul_fixed_assets_NI_b;
+
+	-- append porto/gaia
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_NI_b;
+	raise notice 'coimbra sul: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_NI_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_oporto_fixed_assets_NI_b;
+		
+END
+$$;
+
+
+
+
+
+DO $$
+DECLARE
+	_offset INT;
+BEGIN
+	-- apend alges
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_NI_g;
+	raise notice 'lisboa: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_NI_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_algs_fixed_assets_NI_g;
+
+	-- append coimbra baixa
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_NI_g;
+	raise notice 'alges: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_NI_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_bx_fixed_assets_NI_g;
+
+	-- append coimbra sul
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_NI_g;
+	raise notice 'coimbra baixa: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_NI_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_sul_fixed_assets_NI_g;
+
+	-- append porto/gaia
+	_offset := count(gid) from geo.cirac_risk_lx_fixed_assets_NI_g;
+	raise notice 'coimbra sul: %', _offset;
+	insert into geo.cirac_risk_lx_fixed_assets_NI_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_oporto_fixed_assets_NI_g;
+		
+END
+$$;
+
+
+
+
+DO $$
+DECLARE
+	_offset INT;
+BEGIN
+	-- apend alges
+	_offset := count(gid) from geo.cirac_risk_lx_res_inventory_b;
+	raise notice 'lisboa: %', _offset;
+	insert into geo.cirac_risk_lx_res_inventory_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_algs_res_inventory_b;
+
+	-- append coimbra baixa
+	_offset := count(gid) from geo.cirac_risk_lx_res_inventory_b;
+	raise notice 'alges: %', _offset;
+	insert into geo.cirac_risk_lx_res_inventory_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_bx_res_inventory_b;
+
+	-- append coimbra sul
+	_offset := count(gid) from geo.cirac_risk_lx_res_inventory_b;
+	raise notice 'coimbra baixa: %', _offset;
+	insert into geo.cirac_risk_lx_res_inventory_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_sul_res_inventory_b;
+
+	-- append porto/gaia
+	_offset := count(gid) from geo.cirac_risk_lx_res_inventory_b;
+	raise notice 'coimbra sul: %', _offset;
+	insert into geo.cirac_risk_lx_res_inventory_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_oporto_res_inventory_b;
+		
+END
+$$;
+
+
+
+
+
+
+
+DO $$
+DECLARE
+	_offset INT;
+BEGIN
+	-- apend alges
+	_offset := count(gid) from geo.cirac_risk_lx_res_inventory_g;
+	raise notice 'lisboa: %', _offset;
+	insert into geo.cirac_risk_lx_res_inventory_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_algs_res_inventory_g;
+
+	-- append coimbra baixa
+	_offset := count(gid) from geo.cirac_risk_lx_res_inventory_g;
+	raise notice 'alges: %', _offset;
+	insert into geo.cirac_risk_lx_res_inventory_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_bx_res_inventory_g;
+
+	-- append coimbra sul
+	_offset := count(gid) from geo.cirac_risk_lx_res_inventory_g;
+	raise notice 'coimbra baixa: %', _offset;
+	insert into geo.cirac_risk_lx_res_inventory_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_sul_res_inventory_g;
+
+	-- append porto/gaia
+	_offset := count(gid) from geo.cirac_risk_lx_res_inventory_g;
+	raise notice 'coimbra sul: %', _offset;
+	insert into geo.cirac_risk_lx_res_inventory_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_oporto_res_inventory_g;
+		
+END
+$$;
+
+
+
+
+
+DO $$
+DECLARE
+	_offset INT;
+BEGIN
+	-- apend alges
+	_offset := count(gid) from geo.cirac_risk_lx_stocks_b;
+	raise notice 'lisboa: %', _offset;
+	insert into geo.cirac_risk_lx_stocks_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_algs_stocks_b;
+
+	-- append coimbra baixa
+	_offset := count(gid) from geo.cirac_risk_lx_stocks_b;
+	raise notice 'alges: %', _offset;
+	insert into geo.cirac_risk_lx_stocks_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_bx_stocks_b;
+
+	-- append coimbra sul
+	_offset := count(gid) from geo.cirac_risk_lx_stocks_b;
+	raise notice 'coimbra baixa: %', _offset;
+	insert into geo.cirac_risk_lx_stocks_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_sul_stocks_b;
+
+	-- append porto/gaia
+	_offset := count(gid) from geo.cirac_risk_lx_stocks_b;
+	raise notice 'coimbra sul: %', _offset;
+	insert into geo.cirac_risk_lx_stocks_b(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_oporto_stocks_b;
+		
+END
+$$;
+
+
+
+
+
+
+DO $$
+DECLARE
+	_offset INT;
+BEGIN
+	-- apend alges
+	_offset := count(gid) from geo.cirac_risk_lx_stocks_g;
+	raise notice 'lisboa: %', _offset;
+	insert into geo.cirac_risk_lx_stocks_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_algs_stocks_g;
+
+	-- append coimbra baixa
+	_offset := count(gid) from geo.cirac_risk_lx_stocks_g;
+	raise notice 'alges: %', _offset;
+	insert into geo.cirac_risk_lx_stocks_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_bx_stocks_g;
+
+	-- append coimbra sul
+	_offset := count(gid) from geo.cirac_risk_lx_stocks_g;
+	raise notice 'coimbra baixa: %', _offset;
+	insert into geo.cirac_risk_lx_stocks_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_sul_stocks_g;
+
+	-- append porto/gaia
+	_offset := count(gid) from geo.cirac_risk_lx_stocks_g;
+	raise notice 'coimbra sul: %', _offset;
+	insert into geo.cirac_risk_lx_stocks_g(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_oporto_stocks_g;
+		
+END
+$$;
+
+
+
+
+
+DO $$
+DECLARE
+	_offset INT;
+BEGIN
+	-- apend alges
+	_offset := count(gid) from geo.cirac_risk_lx_structure;
+	raise notice 'lisboa: %', _offset;
+	insert into geo.cirac_risk_lx_structure(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_algs_structure;
+
+	-- append coimbra baixa
+	_offset := count(gid) from geo.cirac_risk_lx_structure;
+	raise notice 'alges: %', _offset;
+	insert into geo.cirac_risk_lx_structure(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_bx_structure;
+
+	-- append coimbra sul
+	_offset := count(gid) from geo.cirac_risk_lx_structure;
+	raise notice 'coimbra baixa: %', _offset;
+	insert into geo.cirac_risk_lx_structure(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_sul_structure;
+
+	-- append porto/gaia
+	_offset := count(gid) from geo.cirac_risk_lx_structure;
+	raise notice 'coimbra sul: %', _offset;
+	insert into geo.cirac_risk_lx_structure(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_oporto_structure;
+		
+END
+$$;
+
+
+
+
+DO $$
+DECLARE
+	_offset INT;
+BEGIN
+	-- apend alges
+	_offset := count(gid) from geo.cirac_risk_lx_T100;
+	raise notice 'lisboa: %', _offset;
+	insert into geo.cirac_risk_lx_T100(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_algs_T100;
+
+	-- append coimbra baixa
+	_offset := count(gid) from geo.cirac_risk_lx_T100;
+	raise notice 'alges: %', _offset;
+	insert into geo.cirac_risk_lx_T100(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_bx_T100;
+
+	-- append coimbra sul
+	_offset := count(gid) from geo.cirac_risk_lx_T100;
+	raise notice 'coimbra baixa: %', _offset;
+	insert into geo.cirac_risk_lx_T100(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_sul_T100;
+
+	-- append porto/gaia
+	_offset := count(gid) from geo.cirac_risk_lx_T100;
+	raise notice 'coimbra sul: %', _offset;
+	insert into geo.cirac_risk_lx_T100(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_oporto_T100;
+		
+END
+$$;
+
+
+
+DO $$
+DECLARE
+	_offset INT;
+BEGIN
+	-- apend alges
+	_offset := count(gid) from geo.cirac_risk_lx_T500;
+	raise notice 'lisboa: %', _offset;
+	insert into geo.cirac_risk_lx_T500(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_algs_T500;
+
+	-- append coimbra baixa
+	_offset := count(gid) from geo.cirac_risk_lx_T500;
+	raise notice 'alges: %', _offset;
+	insert into geo.cirac_risk_lx_T500(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_bx_T500;
+
+	-- append coimbra sul
+	_offset := count(gid) from geo.cirac_risk_lx_T500;
+	raise notice 'coimbra baixa: %', _offset;
+	insert into geo.cirac_risk_lx_T500(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_sul_T500;
+
+	-- append porto/gaia
+	_offset := count(gid) from geo.cirac_risk_lx_T500;
+	raise notice 'coimbra sul: %', _offset;
+	insert into geo.cirac_risk_lx_T500(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_oporto_T500;
+		
+END
+$$;
+
+
+
+
+DO $$
+DECLARE
+	_offset INT;
+BEGIN
+	-- apend alges
+	_offset := count(gid) from geo.cirac_risk_lx_T50;
+	raise notice 'lisboa: %', _offset;
+	insert into geo.cirac_risk_lx_T50(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_algs_T50;
+
+	-- append coimbra baixa
+	_offset := count(gid) from geo.cirac_risk_lx_T50;
+	raise notice 'alges: %', _offset;
+	insert into geo.cirac_risk_lx_T50(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_bx_T50;
+
+	-- append coimbra sul
+	_offset := count(gid) from geo.cirac_risk_lx_T50;
+	raise notice 'coimbra baixa: %', _offset;
+	insert into geo.cirac_risk_lx_T50(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_cmbr_sul_T50;
+
+	-- append porto/gaia
+	_offset := count(gid) from geo.cirac_risk_lx_T50;
+	raise notice 'coimbra sul: %', _offset;
+	insert into geo.cirac_risk_lx_T50(gid, value, geom)
+		select (gid + _offset) as gid, value, geom from geo.cirac_risk_oporto_T50;
+		
+END
+$$;

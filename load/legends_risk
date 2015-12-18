@@ -1,0 +1,116 @@
+Activos Fixos Industriais CV
+select min(value), max(value) from geo.cirac_risk_lx_fixed_assets_i_b
+0;216.657
+
+0 #686868
+0.0001-40  #6FC400
+40-80  #B0E000
+80-120  #FFFF00
+120-160  #FFAA00
+160-200  #FF5500
+200-240  #FF0000
+
+
+
+Activos Fixos Industriais R/C
+select min(value), max(value) from geo.cirac_risk_lx_fixed_assets_i_g
+0;130.088
+
+0 #686868
+0.0001-25  #6FC400
+25-50  #B0E000
+50-75  #FFFF00
+75-100  #FFAA00
+100-125  #FF5500
+125-150  #FF0000
+
+
+Activos Fixos não Industriais CV
+select min(value), max(value) from geo.cirac_risk_lx_fixed_assets_ni_b
+0;571.037
+
+0 #686868
+0.0001-100  #6FC400
+100-200  #B0E000
+200-300  #FFFF00
+300-400  #FFAA00
+400-500  #FF5500
+500-600  #FF0000
+
+
+
+Activos Fixos não Industriais R/C
+select min(value), max(value) from geo.cirac_risk_lx_fixed_assets_ni_g
+0;571.099
+
+Conteúdo Residencial CV
+select min(value), max(value) from geo.cirac_risk_lx_res_inventory_b
+0;569.87
+
+Conteúdo Residencial R/C
+select min(value), max(value) from geo.cirac_risk_lx_res_inventory_g
+0;550.022
+
+Stocks CV
+select min(value), max(value) from geo.cirac_risk_lx_stocks_b
+0;509.859
+
+Stocks R/C
+select min(value), max(value) from geo.cirac_risk_lx_stocks_g
+0;468.124
+
+
+Estrutura
+select min(value), max(value) from geo.cirac_risk_lx_structure
+0;55.402
+
+
+0 #686868
+0.0001-10  #6FC400
+10-20  #B0E000
+20-30  #FFFF00
+30-40  #FFAA00
+40-50  #FF5500
+50-60  #FF0000
+
+
+
+
+select min(value), max(value) from geo.cirac_risk_lx_t500
+500;500
+
+#0059cc
+
+
+
+
+select min(value), max(value) from geo.cirac_risk_lx_t100
+100;100
+
+#0070FF
+
+
+
+select min(value), max(value) from geo.cirac_risk_lx_t50
+50;50
+
+#328cff
+
+
+
+O <b><i>Risco</i><b> é definido, de forma genérica, como a probabilidade de ocorrência de consequências ou perdas danosas como resultado da interação entre o meio natural, ou dos perigos induzido pelo homem, e as condições de susceptibilidade dos elementos.<br><br>
+
+O cálculo do risco consiste no produto da probabilidade de ocorrência de um fenómeno, com uma determinada magnitude, pelas consequências resultantes desse fenómeno:
+<div style="">
+risco = probabilidade &times; consequência
+</div>
+
+A probabilidade foi obtida através dos períodos de retorno (ver glossário) de precipitação ou de caudais para as diferentes áreas.<br><br>
+
+Através de modelação é possível obter-se a extensão da inundação e as características associada a diferentes períodos de retorno. Com esta informação e recorrendo-se a dados históricas dos danos causados nos elementos expostos associados a diferentes alturas de água, criam-se curvas profundidade-dano. <br><br>
+
+Com a aplicação destas curvas associa-se uma consequência aos elementos expostos nos diferentes períodos de retorno. Finalmente e através da multiplicação da probabilidade de uma inundação pela consequência que esta causa nos elementos, obtemos o risco para cada período de retorno analisado.<br><br>
+
+A soma do risco associado aos períodos de retorno analisados corresponde ao que se designa por <b><i>dano médio anual</i></b>. Este dano médio anual representa a fração do valor total do património exposto para uma determinada categoria de edifícios que é impactado em média anualmente.
+
+
