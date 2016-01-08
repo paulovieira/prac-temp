@@ -24,6 +24,8 @@ supportsFullscreen: {{ supportsFullscreen }}
         <a href="#" style="font-size: 120%;" class="js-map-group" data-group-name={{ groupObj.groupName }} title="clique para ver/esconder os mapas deste grupo">{{ groupObj.groupName }}</a>
         <ul>
             {% for map in groupObj.maps %}
+
+            {% if not map.hidden %}
             <li>
                 <div style="xborder: solid; max-width: 400px; padding-right: 6px; margin-top: 0px; border-top: solid 1px #ededed; {{ 'border-bottom: solid 1px #ededed;' if loop.last }}">
 
@@ -58,6 +60,7 @@ supportsFullscreen: {{ supportsFullscreen }}
                     </div>
                 </div>
             </li>
+            {% endif %}
 
             {% endfor %}
         </ul>
