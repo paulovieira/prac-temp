@@ -37,10 +37,28 @@ ReadMultipleFiles(filesPaths, function(err, files){
 	    // ad-hoc properties
 
 	    tileJson["id"] = filename;
-	    tileJson["isCirac"] = true;
 		tileJson["template"] = mml["interactivity"]["template_teaser"];
 		tileJson["tiles"] = ["/tiles/" + filename + "/{z}/{x}/{y}.png"];
 		tileJson["grids"] = ["/tiles/" + filename + "/{z}/{x}/{y}.grid.json"];
+
+		if(filename.indexOf("cirac_vul") !==-1){
+			tileJson["isCirac"] = true;	
+		}
+		else if(filename.indexOf("_t500") !== -1 || filename.indexOf("_t50") !== -1 || filename.indexOf("_t100") !== -1){
+			tileJson["isFlood"] = true;	
+			tileJson["zIndex"] = 7;	
+
+		}
+		else if(filename.indexOf("cirac_risk") !==-1){
+			tileJson["isRisk"] = true;	
+			tileJson["zIndex"] = 7;	
+		}
+		else{
+			throw new Error("filename: " + filename);
+		}
+
+
+	    
 
 		tileJsons.push(tileJson);
 	});
