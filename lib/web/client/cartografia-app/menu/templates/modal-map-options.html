@@ -1,6 +1,6 @@
 <div class="modal-header">
     <button type="button" class="close js-modal-cancel" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <h4 class="modal-title">Opções para o mapa "{{ name }}"</h4>
+    <h4 class="modal-title">Opções para o mapa "{{ tileJson.group }} - {{ tileJson.name }}"</h4>
 </div>
 
 
@@ -22,7 +22,7 @@
                 <label for="layer-z-index">Nível de sobreposição do mapa</label>
                 <div>
                     <span style="margin-right: 10px;">-10</span>
-                    <input type="text" class="form-control" id="layer-z-index" data-slider-min="-10" data-slider-max="10" data-slider-step="1" data-slider-value="{{ zIndex }}" />
+                    <input type="text" class="form-control" id="layer-z-index" data-slider-min="-10" data-slider-max="10" data-slider-step="1" data-slider-value="{{ zindex }}" /> 
                     <span style="margin-left: 10px;">10</span>
                 </div>
             </div>
