@@ -1,2 +1,2 @@
- process.title = "node-ciracnew";
+ process.title = "node-prac";
  module.exports = require("./lib");

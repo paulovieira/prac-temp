@@ -18,9 +18,9 @@ internals.bundles = JSON.parse(Fs.readFileSync(Path.join(internals.rootDir, "bun
 module.exports = {
 
     host: "localhost",
-    port: 5000,
+    port: 3200,
     publicUri: "localhost",  // host
-    publicPort: 5000,  // probably 80
+    publicPort: 3200,  // probably 80
 
     rootDir: internals.rootDir,
     viewsDir: internals.viewsDir,
